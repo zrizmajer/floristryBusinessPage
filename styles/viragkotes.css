@@ -1,22 +1,20 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   position: relative;
   min-height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-size: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 60px;
-}
-
-#companyLogo {
-  margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -39,17 +37,51 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  .btn-toolbar {
+    display: none;
+  }
+}
 .carousel-wrapper {
   position: relative;
-  padding: 0;
+  height: 90vh;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  z-index: -1;
+}
+
+.carousel-item.one {
+  background: url("../images/carousel1.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+
+.carousel-item.two {
+  background: url("../images/carousel2.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+
+.carousel-item.three {
+  background: url("../images/carousel3.jpg") no-repeat fixed center center;
+  background-size: cover;
 }
 
 .mainText {
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 0;
+  padding-top: 40vh;
   width: 100%;
+  height: 100%;
   text-align: center;
+  text-shadow: 0 0 4px black;
   animation-name: textFloat;
   animation-duration: 3s;
   animation-timing-function: ease-out;
@@ -57,47 +89,27 @@ body {
 
 @keyframes textFloat {
   from {
-    top: 30%;
+    padding-top: 35vh;
   }
   to {
-    top: 40%;
+    padding-top: 40vh;
   }
 }
 #floristName {
-  font-size: 2vw;
+  font-size: 3vw;
   color: white;
   letter-spacing: 0.8vw;
 }
 
 #floristOccupation {
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: bold;
   color: white;
   letter-spacing: 0.8vw;
 }
 
-.carousel-inner {
-  z-index: -1;
-}
-
-@media only screen and (max-width: 1200px) {
-  .btn-toolbar {
-    display: none;
-  }
-}
-.carousel .one {
-  background: url("images/carousel1.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-.carousel .two {
-  background: url("images/carousel2.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-.carousel .three {
-  background: url("images/carousel3.jpg") no-repeat center center fixed;
-  background-size: cover;
+.intro-wrapper {
+  font-family: "Alegreya Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 a.anchor {
@@ -107,8 +119,12 @@ a.anchor {
   visibility: hidden;
 }
 
+#introduction {
+  font-size: 3.5vw;
+}
+
 footer {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   position: absolute;
   right: 0;
@@ -129,11 +145,6 @@ footer {
   font-size: 0.8em;
   color: beige;
   text-decoration: none;
-}
-
-.gallery-wrapper {
-  padding-bottom: 0;
-  height: auto;
 }
 
 .img-opaque:hover {

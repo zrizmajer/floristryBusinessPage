@@ -10,3 +10,8 @@ $breakpointXl : 1200px;
         height: auto;
     }
 }
+
+@mixin carouselBackgroundImage($url) {
+    background: url($url) no-repeat fixed center center;
+    background-size: cover;
+}
