@@ -1,85 +1,155 @@
 <!DOCTYPE html>
-<html lang='HU'>
-    <head>
-        <title>Emődi Enikő virágkötő, virágkötészet</title>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta content="virágkötő, virágkötészet, virágkötő budapest, virágkötészet budapest" name="keywords">
-        <meta content="Emődi Enikő virágkötő oldala - Igényes, ízléses, stílusos csokrok, koszorúk Budapesten." name="description">
-        <meta content="Rizmajer Zoltán" name="author">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles/viragkotes.css" rel="stylesheet">
-        <link rel="icon" href="images/sunflower.ico">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="scripts/viragkotes.js"></script>
-        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
-    </head>
-    <body>
-        <header id="header">
-            <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img alt="Company Logo" class="d-inline-block align-top" height="80%" id="companyLogo" src="images/companyLogo1.png" width="80%">
-                </a>
-                <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul " class=" navbar-nav">
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="index.html">BEMUTATKOZÁS</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="works.html">MUNKÁIM</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">SZOLGÁLTATÁSOK</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">KAPCSOLAT</a>
-                        </li>
-                    </ul>
-                </div>
-                <div aria-label="Social Media Buttons" class="btn-toolbar" role="toolbar">
-                    <div aria-label="First group" class="btn-group mr-4" role="group">
-                        <button class="btn btn-secondary border-0" type="button">
-                            <a class="social-button" href="https://www.facebook.com/eniko.emodi.7">
-                                <i class="fab fa-facebook-f" target="_blank"></i>
-                            </a>
-                        </button>
-                        <button class="btn btn-secondary border-0" type="button">
-                            <a class="social-button" href="https://www.instagram.com/emodieniko/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <footer class="bg-dark" id="footer">
-            <div class="container px-0 mx-auto h-100" style="width: 80vw;">
-                <div class="row h-100 px-0 mx-0 align-items-center">
-                    <div class="col-xl-auto footer-link">
-                        <a href="#">&#169; 2019 Rizmajer Zoltán.</a>
-                    </div>
-                    <div class="col-lg footer-link">
-                        <p>Az oldalon található képek szerzői jogvédelem alatt állnak.</p>
-                    </div>
-                    <div class="col-sm-auto footer-link">
-                        <a href="#">Oldaltérkép</a>
-                    </div>
-                    <div class="col-sm-auto footer-link">
-                        <a href="#">Partnerek</a>
-                    </div>
-                    <div class="col-sm-auto footer-link">
-                        <a href="#">Adatkezelési tájékoztató</a>
-                    </div>
-                </div>
+<html lang="HU">
+  <head>
+    <title>Szolgáltatások | Emődi Enikő virágkötő, virágkötészet</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="virágkötő, virágkötészet, virágkötő budapest, virágkötészet budapest" name="keywords" />
+    <meta
+      content="Emődi Enikő virágkötő oldala - Igényes, ízléses, stílusos csokrok, koszorúk Budapesten."
+      name="description"
+    />
+    <meta content="Rizmajer Zoltán" name="author" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/viragkotes.css" rel="stylesheet" />
+    <link href="images/sunflower.ico" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya Sans" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/viragkotes.js"></script>
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img
+            alt="Company Logo"
+            class="d-inline-block align-top"
+            height="80%"
+            id="companyLogo"
+            src="images/companyLogo1.png"
+            width="80%"
+          />
+        </a>
+        <button
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-target="#navbarNav"
+          data-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-4">
+              <a class="nav-link" href="index.html">BEMUTATKOZÁS</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="works.html">MUNKÁIM</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">SZOLGÁLTATÁSOK</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">KAPCSOLAT</a>
+            </li>
+          </ul>
+        </div>
+        <div aria-label="Social Media Buttons" class="btn-toolbar" role="toolbar">
+          <div aria-label="First group" class="btn-group mr-4" role="group">
+            <button class="btn btn-secondary border-0" type="button">
+              <a class="social-button" href="https://www.facebook.com/eniko.emodi.7">
+                <i class="fab fa-facebook-f" target="_blank"></i>
+              </a>
+            </button>
+            <button class="btn btn-secondary border-0" type="button">
+              <a class="social-button" href="https://www.instagram.com/emodieniko/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="services-wrapper bg-light">
+      <div class="container" style="max-width: 90vw">
+        <div class="row">
+          <div class="col-md card-column first">
+            <div class="card">
+              <div class="image-container">
+                <img src="images/services-small.jpeg" class="card-img-top" alt="small" width="100%;" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kis csokor</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel elit fringilla, volutpat nunc in,
+                  tincidunt dui. Nullam non magna eget elit tempus mollis.
+                </p>
+              </div>
             </div>
-        </footer>
-    </body>
+          </div>
+          <div class="col-md card-column">
+            <div class="card">
+              <div class="image-container">
+                <img src="images/services-medium.jpg" class="card-img-top" alt="small" width="100%;" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Közepes csokor</h4>
+                <p class="card-text">
+                  Sed metus orci, aliquet sed dignissim et, ultrices pellentesque metus. Mauris fringilla eget odio
+                  vitae efficitur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md card-column last">
+            <div class="card">
+              <div class="image-container">
+                <img src="images/services-large.jpg" class="card-img-top" alt="small" width="100%;" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Nagy csokor</h4>
+                <p class="card-text">
+                  Nunc laoreet vehicula nibh sit amet ornare. Proin vel elementum risus, sit amet commodo nibh.
+                  Suspendisse rhoncus lectus vitae massa mollis, eu molestie felis facilisis. Donec pharetra lacinia
+                  magna id commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark" id="footer">
+      <div class="container px-0 mx-auto h-100" style="width: 80vw;">
+        <div class="row h-100 px-0 mx-0 align-items-center">
+          <div class="col-xl-auto footer-link">
+            <a href="#">&#169; 2019 Rizmajer Zoltán.</a>
+          </div>
+          <div class="col-lg footer-link">
+            <p>Az oldalon található képek szerzői jogvédelem alatt állnak.</p>
+          </div>
+          <div class="col-sm-auto footer-link">
+            <a href="#">Oldaltérkép</a>
+          </div>
+          <div class="col-sm-auto footer-link">
+            <a href="#">Partnerek</a>
+          </div>
+          <div class="col-sm-auto footer-link">
+            <a href="#">Adatkezelési tájékoztató</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
