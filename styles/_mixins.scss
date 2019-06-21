@@ -1,17 +1,45 @@
 //breakpoint variables
-$breakpointSm : 576px;
-$breakpointMd : 768px;
-$breakpointLg : 992px;
-$breakpointXl : 1200px;
+$breakpointSm: 576px;
+$breakpointMd: 768px;
+$breakpointLg: 992px;
+$breakpointXl: 1200px;
 
 //mixin for resizing footer elements after viewport width changes
 @mixin footerResize() {
-    @media (max-width : $breakpointLg) {
-        height: auto;
-    }
+  height: 60px;
+  @media only screen and (max-width: $breakpointXl) {
+    height: 60px;
+  }
+  @media only screen and (max-width: $breakpointLg) {
+    height: 90px;
+  }
+  @media only screen and (max-width: $breakpointSm) {
+    height: 150px;
+  }
+}
+
+@mixin bodyBottomMargin() {
+  @media only screen and (max-width: $breakpointXl) {
+    margin-bottom: 60px;
+  }
+  @media only screen and (max-width: $breakpointLg) {
+    margin-bottom: 90px;
+  }
+  @media only screen and (max-width: $breakpointSm) {
+    margin-bottom: 150px;
+  }
+}
+
+@mixin mainTextResponsive($fontSize, $spacing, $fontSizeRes, $spacingRes) {
+  font-size: $fontSize;
+  letter-spacing: $spacing;
+  @media only screen and (max-width: $breakpointLg) {
+    font-size: $fontSizeRes;
+    letter-spacing: $spacingRes;
+  }
 }
 
 @mixin carouselBackgroundImage($url) {
-    background: url($url) no-repeat fixed center center;
-    background-size: cover;
+  background: url($url) no-repeat fixed center center;
+  background-size: cover;
 }

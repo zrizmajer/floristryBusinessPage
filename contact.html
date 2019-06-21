@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="HU">
   <head>
-    <title>Bemutatkozás | Emődi Enikő virágkötő, virágkötészet</title>
+    <title>Kapcsolat | Emődi Enikő virágkötő, virágkötészet</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="virágkötő, virágkötészet, virágkötő budapest, virágkötészet budapest" name="keywords" />
@@ -12,7 +12,7 @@
     <meta content="Rizmajer Zoltán" name="author" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="styles/viragkotes.css" rel="stylesheet" />
-    <link href="images/sunflower.ico" rel="icon" />
+    <link rel="icon" href="images/sunflower.ico" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya Sans" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -89,37 +89,61 @@
         </div>
       </nav>
     </header>
-    <div class="intro-wrapper">
-      <div class="text-center pt-4" id="intro">
-        <a class="anchor" id="top"></a>
-        <h2 id="introduction">Bemutatkozás</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="intro-container mx-auto py-5" style="width: 80vw;">
-        <p class="introPar py-3">
-          <img alt="Eniko profilkep" id="profilePic" class="float-right mw-10 ml-2" src="images/Eniko.JPG" />Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Sed vel elit fringilla, volutpat nunc in, tincidunt dui. Nullam
-          non magna eget elit tempus mollis. Aenean a nunc vel metus commodo semper vestibulum eu velit. Morbi nulla
-          tellus, mollis in sapien faucibus, tincidunt dignissim felis. Integer facilisis suscipit nunc ut laoreet. Sed
-          at eros nibh. Curabitur id faucibus nunc, sagittis molestie lectus. Nullam at nisi elit.
-        </p>
-        <p class="introPar py-3">
-          Sed metus orci, aliquet sed dignissim et, ultrices pellentesque metus. Mauris fringilla eget odio vitae
-          efficitur. Nullam lectus ante, tristique aliquam gravida ac, vehicula sit amet dui. Mauris a semper velit, at
-          malesuada dolor. Pellentesque magna mi, finibus ut tempor ac, venenatis id dui. Pellentesque sed suscipit
-          risus, quis tincidunt quam. Pellentesque magna sem, volutpat quis dictum id, congue a ante. Proin sagittis
-          ante id tortor mattis congue. Donec vulputate eu nisi eget aliquet. Curabitur risus dolor, dictum sit amet
-          rhoncus a, euismod et eros. Nam sit amet nisi felis.
-        </p>
-        <p class="introPar py-3">
-          Pellentesque sed fringilla enim. Pellentesque viverra, lacus ut vestibulum porta, neque nullapharetra felis,
-          quis aliquam ipsum sapien quis enim. Donec semper sagittis ex vel sodales. Morbi commodo risus vitae tincidunt
-          semper. Nunc laoreet vehicula nibh sit amet ornare. Proin vel elementum risus, sit amet commodo nibh.
-          Suspendisse rhoncus lectus vitae massa mollis, eu molestie felis facilisis. Donec pharetra lacinia magna id
-          commodo. Ut a vulputate orci, eu maximus sem. Praesent tincidunt, mi a semper egestas, neque nulla elementum
-          ex, et tempus ligula libero eget arcu. Ut velit elit, cursus ut congue ac, tincidunt vitae augue. Maecenas
-          tristique, nibh et ultricies facilisis, sapien felis aliquet turpis, et pulvinar magna libero quis libero.
-        </p>
+    <div class="contact-wrapper">
+      <div class="form-container">
+        <form action="#" method="POST">
+          <div class="container-fluid">
+            <p>
+              Ha munkáim elnyerték a tetszésedet, és szeretnél rendelést leadni, kérlek keress az alábbi elérhetőségek
+              egyikén. Ezen kívül lehetőséged van az alábbi űrlap kitöltésével üzenetet hagyni, amire minél előbb
+              válaszolni fogok.
+            </p>
+            <div class="row">
+              <div class="col-lg">
+                <label for="fName">Név:<span>*</span></label
+                ><br />
+                <input type="text" id="fName" name="name" autocomplete="on" required autofocus /><br />
+                <label for="fEmail">Email:<span>*</span></label
+                ><br />
+                <input
+                  type="email"
+                  id="fEmail"
+                  name="email"
+                  placeholder="nev@email.com"
+                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                  required
+                /><br />
+                <label for="fTel">Telefon:<span>*</span></label
+                ><br />
+                <input
+                  type="tel"
+                  id="fTel"
+                  name="telephone"
+                  placeholder="+36 (12) 345-6789"
+                  pattern="^\+36 \(\d{1,2}\) \d{3}\-\d{3,4}$"
+                  title="Telefonszám formátum: +36 (12) 345-6789"
+                  required
+                /><br />
+              </div>
+              <div class="col-lg">
+                <label for="fMsg">Üzenet:<span>*</span></label
+                ><br />
+                <textarea id="fMsg" name="name" required style="display: inline;"></textarea>
+              </div>
+            </div>
+            <p><span>*</span> A mező kitöltése kötelező</p>
+            <div class="container submit-group">
+              <div class="row">
+                <div class="col">
+                  <input class="bg-dark" type="submit" value="Elküld" />
+                </div>
+                <div class="col">
+                  <input class="bg-dark" type="reset" value="Törlés" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <footer class="bg-dark" id="footer">

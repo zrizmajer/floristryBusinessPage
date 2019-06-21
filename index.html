@@ -25,9 +25,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-light">
     <header id="header">
-      <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand" href="index.html">
           <img
             alt="Company Logo"
@@ -50,7 +50,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav w-100">
             <li class="nav-item px-4">
               <a class="nav-link" href="#top">BEMUTATKOZÁS</a>
             </li>
@@ -61,23 +61,31 @@
               <a class="nav-link" href="services.html">SZOLGÁLTATÁSOK</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">KAPCSOLAT</a>
+              <a class="nav-link" href="contact.html">KAPCSOLAT</a>
+            </li>
+            <li class="nav-item">
+              <div aria-label="Social Media Buttons" class="btn-toolbar" role="toolbar">
+                <div aria-label="First group" class="btn-group" role="group">
+                  <a
+                    class="btn btn-secondary border-0 social-button"
+                    href="https://www.facebook.com/eniko.emodi.7/"
+                    role="button"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f" target="_blank"></i>
+                  </a>
+                  <a
+                    class="btn btn-secondary border-0 social-button"
+                    href="https://www.instagram.com/emodieniko/"
+                    role="button"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
-        </div>
-        <div aria-label="Social Media Buttons" class="btn-toolbar" role="toolbar">
-          <div aria-label="First group" class="btn-group mr-4" role="group">
-            <button class="btn btn-secondary border-0" type="button">
-              <a class="social-button" href="https://www.facebook.com/eniko.emodi.7">
-                <i class="fab fa-facebook-f" target="_blank"></i>
-              </a>
-            </button>
-            <button class="btn btn-secondary border-0" type="button">
-              <a class="social-button" href="https://www.instagram.com/emodieniko/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </button>
-          </div>
         </div>
       </nav>
     </header>
@@ -113,7 +121,7 @@
         <h1 class="text-uppercase" id="floristOccupation">Virágkötő</h1>
       </div>
     </div>
-    <div class="intro-wrapper bg-light">
+    <div class="intro-wrapper">
       <div class="text-center pt-4" id="intro">
         <a class="anchor" id="top"></a>
         <h2 id="introduction">Bemutatkozás</h2>
@@ -121,15 +129,11 @@
       </div>
       <div class="intro-container mx-auto py-5" style="width: 80vw;">
         <p class="introPar py-3">
-          <img
-            alt="Eniko profilkep"
-            class="float-right mw-10 ml-2"
-            src="images/Eniko.JPG"
-            style="max-width: 200px;"
-          />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel elit fringilla, volutpat nunc in, tincidunt
-          dui. Nullam non magna eget elit tempus mollis. Aenean a nunc vel metus commodo semper vestibulum eu velit.
-          Morbi nulla tellus, mollis in sapien faucibus, tincidunt dignissim felis. Integer facilisis suscipit nunc ut
-          laoreet. Sed at eros nibh. Curabitur id faucibus nunc, sagittis molestie lectus. Nullam at nisi elit.
+          <img alt="Eniko profilkep" id="profilePic" class="float-right mw-10 ml-2" src="images/Eniko.JPG" />Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Sed vel elit fringilla, volutpat nunc in, tincidunt dui. Nullam
+          non magna eget elit tempus mollis. Aenean a nunc vel metus commodo semper vestibulum eu velit. Morbi nulla
+          tellus, mollis in sapien faucibus, tincidunt dignissim felis. Integer facilisis suscipit nunc ut laoreet. Sed
+          at eros nibh. Curabitur id faucibus nunc, sagittis molestie lectus. Nullam at nisi elit.
         </p>
         <p class="introPar py-3">
           Sed metus orci, aliquet sed dignissim et, ultrices pellentesque metus. Mauris fringilla eget odio vitae
