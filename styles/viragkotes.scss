@@ -171,6 +171,15 @@ footer {
   opacity: 0.8;
 }
 
+.gallery-row {
+  height: 40vh;
+}
+
+.img-fluid {
+  min-height: 100%;
+  min-width: 100%;
+}
+
 //galleryModal background
 
 .modal {
