@@ -202,12 +202,16 @@ footer {
   text-decoration: none;
 }
 
+.gallery-wrapper {
+  min-height: 100vh;
+}
+
 .img-opaque:hover {
   opacity: 0.8;
 }
 
 .gallery-row {
-  height: 40vh;
+  min-height: 50vh;
 }
 
 .img-fluid {
